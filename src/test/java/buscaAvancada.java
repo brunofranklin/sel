@@ -9,6 +9,8 @@ public class buscaAvancada {
     public void Main(){
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         nav = new ChromeDriver();
+        // maximiza a tela
+        nav.manage().window().maximize();
         login();
         AcessoTenant();
         TelaDevice();
